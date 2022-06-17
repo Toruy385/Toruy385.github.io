@@ -1,0 +1,355 @@
+/* common ----------------------------- */
+html {
+  height: 100%;
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
+  background: #f8f8f8;
+  height: 100%;
+}
+/* header ------------------- */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 16px;
+  color: #5f5f5f;
+}
+#header h1 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+#header nav {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+}
+#header ul {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+#header a {
+  display: block;
+  padding: 16px;
+  margin: 0;
+  text-align: center;
+  color: #5f5f5f;
+  text-decoration: none;
+}
+#header a:hover {
+  text-decoration: underline;
+}
+
+  /* mainvisual ----------------------- */
+  #mainvisual img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  /* about --------------------------- */
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+  #about .img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  #about .img img {
+    width: 100%;
+    object-fit: contain;
+  }
+  #about .text {
+    padding: 0 16px;
+  }
+  h2.section-title {
+    text-align: left;
+    width: 200px;
+    font-weight: normal;
+  }
+  h2.section-title a {
+    text-decoration: none;
+    color: #5f5f5f;
+  }
+
+  /* skill ----------------------- */
+  #skill {
+    background: #fff;
+    padding: 24px 16px;
+  }
+  #skill .wrapper {
+    color: #5f5f5f;
+  }
+  .skill-title h2 {
+    margin: 0;
+    padding: 10px 0;
+    font-weight: normal;
+  }
+  .skill-title h2 a {
+    text-decoration: none;
+    color: #5f5f5f;
+  }
+  .img {
+    text-align: center;
+  }
+  .bi {
+    font-size: 4rem;
+  }
+
+  /* career ------------------------ */
+  #career {
+    color: #5f5f5f;
+    padding: 24px 16px;
+  }
+  #career .section-title {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  #career .section-title a {
+    text-decoration: none;
+    color: #5f5f5f;
+  }
+  #career  h2 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    font-weight: normal;
+  }
+
+  /* motivation ----------------- */
+  #motivation {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    color: #5f5f5f;
+  }
+  #motivation .wrapper {
+    margin: 0;
+  }
+  #motivation .wrapper .left {
+    padding: 24px 16px;
+  }
+  #motivation .section-title h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  #motivation .section-title a {
+    text-decoration: none;
+    color: #5f5f5f;
+
+  }
+  #motivation .section-title h3 {
+    margin: 0;
+    padding: 10px 0;
+    font-weight: normal;
+  }
+  #motivation .right {
+    width: 100%;
+  }
+  #motivation .right img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  /* footer -------------- */
+    #footer {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #footer h3 {
+      color: #7f7f7f;
+      font-size: 14px;
+    font-weight: normal;
+    }
+ 
+  
+
+/* large screen -------------------------- */
+@media (min-width: 800px) {  
+  /* Header -------------------------------- */
+  #header h1 {
+    font-size: 1.5rem;
+    width: 200px;
+    margin: 0;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #5f5f5f;
+    cursor: pointer;
+  }
+  #header ul {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+  }
+
+  /* about --------------------------- */
+  #about {
+    flex-direction: row;
+    margin: 120px 0;
+    color: #5f5f5f;
+  }  
+  #about .img {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+  }
+  #about .text {
+    width: 60%;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .text h3 {
+    padding: 0;
+    margin: 0;
+    line-height: 2.2;
+    text-align: left;
+    font-weight: normal;
+  }
+  #about p {
+    flex: 1;
+    line-height: 2;
+    padding-top: 20px;
+  }
+  #about span {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* skill -------------------------- */
+  #skill .wrapper {
+    width: calc(100% - 32px);
+    max-width: 800px;
+    margin: 0 auto;
+    color: #5f5f5f;
+  }
+  .flex {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .flex .flex-left, .flex-right {
+    width: 50%;
+    padding: 0 16px;
+    text-align: center;
+  }
+  .flex-left {
+    margin-right: 10px;
+  }
+  .text p  {
+    text-align: left;
+  }
+  
+  /* career -------------------------------- */
+  #career .wrapper {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    padding: 60px 0;
+    max-width: 800px;
+  }
+  #career h2 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  #career .year {
+    line-height: 1.6;
+  }
+  #career span {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  /* motivation --------------------- */
+  #motivation {
+    width: 100%;
+    background: #fff;
+    padding: 60px 0;
+  }
+  #motivation .wrapper {
+    width: calc(100% - 32px);
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+  }
+  #motivation .left {
+    flex: 1;
+    width: 40%;
+    padding: 12px;
+    margin: 0;
+    background: #f5f5f5;
+    position: relative;
+  }
+  #motivation h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  #motivation .left p {
+    margin-top: 5px;
+    width: 450px;
+    line-height: 1.8;
+  }
+  #motivation .section-title {
+    margin: 0;
+    padding-top: 20px;
+  }
+  #motivation .section-title h2 {
+    margin: 0;
+    padding: 0;
+  }
+  #motivation .section-title h3 {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  #motivation .section-title h2 a {
+    text-decoration: none;
+    color: #5f5f5f;
+  }
+  #motivation .right {
+    align-self: center;
+    width: 60%;
+    position: absolute;
+    right: -250px;
+  }
+  #motivation .right img {
+    width: 400px;
+    object-fit: contain;
+  }
+}
+
+/* animation ------------------------- */
+.animate {
+  opacity: 0;
+  transition: opacity .3s, transform .3s;
+}
+.animate.slide-from-left {
+  transform: translateX(-40px);
+}
+.animate.slide-from-right {
+  transform: translateX(40px);
+}
+.animate.appear {
+  opacity: 1;
+  transform: none;
+}
