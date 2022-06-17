@@ -50,9 +50,20 @@ body {
 }
 
   /* mainvisual ----------------------- */
+  #mainvisual {
+    height: 800px;
+  }
   #mainvisual img {
     object-fit: contain;
     width: 100%;
+    position: absolute;
+  }
+  .hero img {
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  .hero img.current {
+    opacity: 1;
   }
 
   /* about --------------------------- */
