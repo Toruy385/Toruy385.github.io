@@ -51,7 +51,7 @@ body {
 
   /* mainvisual ----------------------- */
   #mainvisual {
-    height: 800px;
+    height: 300px;
   }
   #mainvisual img {
     object-fit: contain;
@@ -212,6 +212,11 @@ body {
     padding: 0;
     display: flex;
     list-style: none;
+  }
+
+  /* mainvisual ----------------------- */
+  #mainvisual {
+    height: 800px;
   }
 
   /* about --------------------------- */
