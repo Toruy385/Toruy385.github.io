@@ -277,6 +277,17 @@ body {
   .text p  {
     text-align: left;
   }
+  .imagelist img {
+    cursor: pointer;
+    transition: transform .3s;
+  }
+  .imagelist a {
+    text-decoration: none;
+    color: #5f5f5f;
+  }
+  .imagelist:hover img {
+    transform: scale(1.1);
+  }
   
   /* career -------------------------------- */
   #career .wrapper {
