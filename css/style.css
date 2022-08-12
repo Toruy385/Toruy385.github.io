@@ -106,6 +106,7 @@ body {
   }
   #skill .wrapper {
     color: #5f5f5f;
+    margin-bottom: 45px;
   }
   .skill-title h2 {
     margin: 0;
@@ -135,10 +136,9 @@ body {
   }
   #skill .skillName {
     width: 400px;
-    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 24px auto;
   }
   #skill .skillName a {
     display: block;
@@ -146,17 +146,16 @@ body {
     text-decoration: none;
     color: #5f5f5f;
   }
+  #skill .skillName a:hover {
+    cursor: pointer;
+    opacity: .6;
+    transition: 1s;
+  }
   #skill .skillName p {
     padding-bottom: 16px;
     margin: 0 auto;
     width: 100px;
     text-align: center;
-  }
-  #skill .skillName a:hover {
-    cursor: pointer;
-    opacity: .6;
-    /* border-bottom: 2px solid #5f5f5f; */
-    transition: 1s;
   }
 
   /* career ------------------------ */
@@ -228,6 +227,29 @@ body {
       color: #7f7f7f;
       font-size: 14px;
     font-weight: normal;
+    }
+
+    /* トップへ戻るボタン */
+    /* 右下に固定で配置 */
+    #to-top {
+      width: 50px;
+      height: 50px;
+      background-color: #5f5f5f;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      position: fixed;
+      right: 25px;
+      bottom: 25px;
+    }
+    /* 三角形を疑似要素で表示 */
+    #to-top::after {
+      content: "";
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid #fff;
+      position: relative;
+      left: 17px;
+      bottom: 1px;
     }
   
 
