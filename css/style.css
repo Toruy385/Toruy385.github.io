@@ -254,7 +254,7 @@ body {
       content: "";
       border-left: 7px solid transparent;
       border-right: 7px solid transparent;
-      border-bottom: 7px solid #fff;
+      border-bottom: 11px solid #fff;
       position: relative;
       left: 17px;
       bottom: 3px;
