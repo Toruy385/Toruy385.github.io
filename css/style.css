@@ -5,6 +5,8 @@ html {
 body {
   overflow-x: hidden;
   margin: 0;
+  padding: 0;
+  width: 100%;
   background: #f8f8f8;
   height: 100%;
 }
@@ -131,6 +133,31 @@ body {
   .imagelist:hover img {
     transform: scale(1.1);
   }
+  #skill .skillName {
+    width: 400px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  #skill .skillName a {
+    display: block;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #5f5f5f;
+  }
+  #skill .skillName p {
+    padding-bottom: 16px;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+  }
+  #skill .skillName a:hover {
+    cursor: pointer;
+    opacity: .6;
+    /* border-bottom: 2px solid #5f5f5f; */
+    transition: 1s;
+  }
 
   /* career ------------------------ */
   #career {
@@ -202,11 +229,11 @@ body {
       font-size: 14px;
     font-weight: normal;
     }
- 
   
 
+
 /* large screen -------------------------- */
-@media (min-width: 800px) {  
+@media (min-width: 1000px) {  
   /* Header -------------------------------- */
   #header h1 {
     font-size: 1.5rem;
@@ -288,17 +315,6 @@ body {
   .text p  {
     text-align: left;
   }
-  /* .imagelist img {
-    cursor: pointer;
-    transition: transform .3s;
-  }
-  .imagelist a {
-    text-decoration: none;
-    color: #5f5f5f;
-  }
-  .imagelist:hover img {
-    transform: scale(1.1);
-  } */
   
   /* career -------------------------------- */
   #career .wrapper {
